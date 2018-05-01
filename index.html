@@ -10,15 +10,22 @@
 </style>
 <script type="text/javascript">
     window.onload = function(){
+	    var p=0;
+	for (p=0;p!=200;p++){
         var canvas = document.getElementById("myCanvas");
         var context = canvas.getContext("2d");
-        context.arc(150, 10, 70, 0, 2 * Math.PI, false);
+	var p = 0;
+        context.arc(p, 20, 70, 0, 2 * Math.PI, false);
         var grd = context.createRadialGradient(150, 100, 10, 160, 110, 100);
         grd.addColorStop(0, '#8ED6FF');   
         grd.addColorStop(1, '#004CB3');
         context.fillStyle = grd;
         context.fill();
         context.stroke();
+	if(p>195){
+		p=0;
+	}
+	}
     };
 </script>
 </head>
