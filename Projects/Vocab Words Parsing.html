@@ -4,6 +4,7 @@
 </head>
 <body>
 <h1>Projects<hr></h1>
+
 <p>
 I’ve been using this website Magoosh to study for the GRE. They have a flashcard study app for phones that lets you study vocabulary. The only problem is that the app organizes packs of vocabulary into groups of 50, and you are prompted to define random words form that pack that you haven’t learned yet. I personally don’t like this because I want to study smaller groups of words.
 
@@ -16,8 +17,14 @@ The first step was converting the PDF into something that I can work with. I use
 After this I loaded it into Python character by character. There were a bunch of line feed, or newline, control characters in places the original PDF had them. I didn’t see this before in notepad because Windows uses CRLF (carriage return and line feed or \r\n) for a new line command. I also realized that because I as working with examples that used commas in them I had either had to replace all the commas with another character or find out a way I could have commas in a CSV. I decided to switch from commas to vertical lines to separate my variables.
 
 After playing around in Python for a bit I realized there a lot of inconsistences in the text that made it hard to parse through the data. For example, after almost every vocab definition there is a new line and then the example begins. There are a few instances where there is a period after the definition is finished, which threw off my parsing. So I ended up making a sort-of FSM diagram on paper and then implementing it into Python, and I got it working.
-<a href="index.html" target="_self">Back to main page</a>
 </p>
+  
+<br>
+  
+<p>
+  <a href="index.html" target="_self">Back to main page</a>
+</p>
+  
 </body>
 
 </html>
